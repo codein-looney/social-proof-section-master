@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: -200% -150%, 110% 100%;
+  background-size: contain;
+}
+@media screen and (max-width: 977px) {
+  body {
+    background-position: 105% 0%, 0% 0%;
+    background-size: cover;
+  }
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 977px) {
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+}
+.wrapper .flex-box {
+  margin-bottom: 4.5em;
+  display: flex;
+}
+@media screen and (max-width: 977px) {
+  .wrapper .flex-box {
+    margin-top: 5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 977px) {
+  .wrapper .flex-box .heading {
+    width: 100%;
+  }
+}
+.wrapper .flex-box .heading .heading-title {
+  margin-bottom: 0.3em;
+  max-width: 60%;
+  font-size: 2.5em;
+  color: #502050;
+}
+.wrapper .flex-box .heading .heading-title, .wrapper .flex-box .heading .heading-text {
+  position: relative;
+  left: 14%;
+}
+@media screen and (max-width: 977px) {
+  .wrapper .flex-box .heading .heading-title, .wrapper .flex-box .heading .heading-text {
+    width: 100%;
+    font-size: 1.7em;
+    margin: 0 auto;
+    padding-bottom: 0.5em;
+    left: 0;
+    text-align: center;
+    max-width: 55%;
+  }
+}
+.wrapper .flex-box .heading .heading-text {
+  max-width: 44%;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  color: #937b92;
+}
+@media screen and (max-width: 977px) {
+  .wrapper .flex-box .heading .heading-text {
+    max-width: 69%;
+    font-size: 0.8em;
+  }
+}
+.wrapper .flex-box .rates {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: relative;
+  right: 16%;
+  top: 5%;
+}
+@media screen and (max-width: 977px) {
+  .wrapper .flex-box .rates {
+    transform: translateX(35%) translateY(10%);
+    width: 65%;
+    text-align: center;
+    transform: translate(23.5%, 10%);
+  }
+}
+.wrapper .flex-box .rates .rate {
+  padding: 1.4em;
+  background-color: #f7f2f7;
+  border-radius: 0.7em;
+  list-style: none;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #502050;
+}
+@media screen and (max-width: 977px) {
+  .wrapper .flex-box .rates .rate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+  }
+}
+.wrapper .flex-box .rates .rate .rate-text {
+  width: 100%;
+  transform: translateX(40px);
+}
+@media screen and (max-width: 977px) {
+  .wrapper .flex-box .rates .rate .rate-text {
+    margin-top: 1em;
+    transform: translateX(0px);
+  }
+}
+.wrapper .flex-box .rates .rate::before {
+  content: "";
+  width: 100px;
+  height: 1rem;
+  background-image: url(/images/icon-star.svg);
+  display: block;
+  background-repeat: space;
+  float: left;
+}
+.wrapper .flex-box .rates .rate:nth-child(2) {
+  transform: translateX(40px);
+}
+@media screen and (max-width: 977px) {
+  .wrapper .flex-box .rates .rate:nth-child(2) {
+    transform: translateX(0);
+  }
+}
+.wrapper .flex-box .rates .rate:nth-child(3) {
+  transform: translateX(80px);
+}
+@media screen and (max-width: 977px) {
+  .wrapper .flex-box .rates .rate:nth-child(3) {
+    transform: translateX(0);
+  }
+}
+.wrapper .grid-box {
+  width: 67%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+@media screen and (max-width: 977px) {
+  .wrapper .grid-box {
+    margin-bottom: 7em;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.wrapper .grid-box .box:nth-child(2) {
+  transform: translateY(15px);
+}
+.wrapper .grid-box .box:nth-child(3) {
+  transform: translateY(30px);
+}
+.wrapper .grid-box .box {
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.2em 2.5em 1.5em 2em;
+  background-color: #502050;
+  border-radius: 0.5em;
+  color: #f7f2f7;
+  align-items: center;
+}
+.wrapper .grid-box .box .name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  font-size: 0.7em;
+  font-weight: 500;
+}
+.wrapper .grid-box .box .legit {
+  margin-top: 0.5em;
+  color: #ee68a4;
+}
+.wrapper .grid-box .box .text {
+  margin: 2em 0 1em 0;
+  font-size: 0.7em;
+  font-weight: 400;
+  line-height: 1.7em;
+}
+.wrapper .grid-box .box img {
+  width: 35px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=styles.css.map */
