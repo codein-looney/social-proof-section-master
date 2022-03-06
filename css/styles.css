@@ -131,7 +131,7 @@ body {
   content: "";
   width: 100px;
   height: 1rem;
-  background-image: url(../images/icon-star.svg);
+  background-image: url(/images/icon-star.svg);
   display: block;
   background-repeat: space;
   float: left;
