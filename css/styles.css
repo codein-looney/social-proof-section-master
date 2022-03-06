@@ -7,7 +7,7 @@
 
 body {
   font-family: "Spartan", sans-serif;
-  background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+  background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
   background-repeat: no-repeat;
   background-position: -200% -150%, 110% 100%;
   background-size: contain;
@@ -131,7 +131,7 @@ body {
   content: "";
   width: 100px;
   height: 1rem;
-  background-image: url(/images/icon-star.svg);
+  background-image: url(../images/icon-star.svg);
   display: block;
   background-repeat: space;
   float: left;
